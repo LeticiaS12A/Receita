@@ -57,6 +57,7 @@ export default function Card() {
   //Inicio função de ocultar
   function HendleActive2(){
     setActive2(prevState => !prevState)
+    
   }
 
 return (
@@ -65,7 +66,13 @@ return (
     {receitas.length > 0 ? (
     receitas.map((receita) => (
       //Card de receita
-      <div key={receita._id}   className='card-receita'>
+      <div 
+        key={receita._id}
+        className={`card-receita 
+          ${active1 ? 'expandido1' : ''} 
+          ${active2 ? 'expandido2' : ''} 
+          ${active1 && active2 ? 'expandidoConjunto' : ''}`}
+      >
 
         <div className='info-receitas'>
           <h2>{receita.receita}</h2>
@@ -118,6 +125,6 @@ return (
       ))) : ( <div>Nenhuma receita encontrada.</div>)
     }
   </div>
-);
+)
 
 }
