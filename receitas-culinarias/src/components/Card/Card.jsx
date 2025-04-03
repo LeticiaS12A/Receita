@@ -1,5 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import './Card.css';
+import setaCima from './assets/setaCima.svg'
+import setaBaixo from './assets/setaBaixo.svg'
 import api from '../../services/apiReceitas';
 
 export default function Card() {
@@ -13,6 +15,13 @@ export default function Card() {
   //Variavel useState error
   const [error, setError] = useState(null);
 
+  //Variavel para ocultar ingredientes
+  const[ active1,  setActive1 ] = useState(false)
+
+  //Variavel para ocultar modo de preparo
+  const[ active2,  setActive2 ] = useState(false)
+
+  //Effect para funcionamento padrão e correção de erro
   useEffect(() => {
     const fetchReceitas = async () => {
       try {
@@ -25,14 +34,14 @@ export default function Card() {
         setError(error);
         setLoading(false);
       }
-    };
+  };
 
-    fetchReceitas();
+  fetchReceitas();
   }, []);
 
   //Respondendo carregamento como elemento
   if (loading) {
-    return <div>Carregando receitas...</div>;
+  return <div>Carregando receitas...</div>;
   }
 
   //Respondendo erro como elemento
@@ -40,58 +49,75 @@ export default function Card() {
     return <div>Ocorreu um erro ao carregar as receitas!</div>;
   }
 
-  return (
-    <div className='card'>
+  //Inicio função de ocultar
+  function HendleActive1(){
+    setActive1(prevState => !prevState)
+  }
 
-      {receitas.length > 0 ? (
-        receitas.map((receita) => (
-          //Card de receita
-          <div key={receita._id}   className='card-receita'>
+  //Inicio função de ocultar
+  function HendleActive2(){
+    setActive2(prevState => !prevState)
+  }
 
-            <div className='info-receitas'>
-              <h2>{receita.receita}</h2>
-              {receita.link_imagem && (
-                <img
-                  src={receita.link_imagem}
-                  alt={`Imagem de ${receita.receita}`}
-                />
-              )}
-            </div>
+return (
+  <div className='card'>
 
-            <div className='ingredientes-modoprep'>
+    {receitas.length > 0 ? (
+    receitas.map((receita) => (
+      //Card de receita
+      <div key={receita._id}   className='card-receita'>
 
-            <div className='ingredientes'>
-              <h3>Ingredientes:</h3>
+        <div className='info-receitas'>
+          <h2>{receita.receita}</h2>
+          {receita.link_imagem && (
+            <img src={receita.link_imagem} 
+            alt={`Imagem de ${receita.receita}`}/>
+          )}
+        </div>
 
-              {/* criando um a array para verificar se tem ou não ingredientes */}
-              {receita.ingredientes && Array.isArray(receita.ingredientes) ? (
-                <ul>
-                  {receita.ingredientes.map((ingrediente, index) => (
-                    <li key={index}>{ingrediente}</li>
-                  ))}
-                </ul>)
-                :
-                //Se não encontrar receita
-                (<p>{receita.ingredientes || 'Ingredientes não disponíveis.'}</p>
+        <div className='ocultos'>
+          <button onClick={HendleActive1}>  <p>Ingredientes</p>
+            <img src={active1 ? setaCima : setaBaixo} alt={active1 ? "seta para cima" : 'setaBaixo'}  />
+          </button>
+          <button onClick={HendleActive2}> <p>Modo de Preparo</p>
+            <img src={active2 ? setaCima : setaBaixo} alt={active2 ? "seta para cima" : 'setaBaixo'}  />
+          </button>
+        </div>
 
+        {active1 && (
+          <div className='ingredientes-modoprep'>
+            <h3>Ingredientes:</h3>
+
+            {/* criando um a array para verificar se tem ou não ingredientes */}
+            {receita.ingredientes && Array.isArray(receita.ingredientes) ? (
+              <ul>
+                {receita.ingredientes.map((ingrediente, index) => (
+                <li key={index}>{ingrediente}</li>
+                ))}
+              </ul>)
+                    :
+              //Se não encontrar receita
+              (<p>{receita.ingredientes || 'Ingredientes não disponíveis.'}</p>
               )} {/*fechando array*/}
-            </div>
-
-            <div className='div-modo-preparo'>
-              {receita.modo_preparo && (
-                <div className='modo-preparo'>
-                  <h3>Modo de Preparo:</h3>
-                  <p>{receita.modo_preparo}</p>
-                </div>)}
-            </div>
-
-          {/* fechamento do card de receita */}
-            </div>
-            </div>
-
-        ))) : (
-          <div>Nenhuma receita encontrada.</div>
+          </div>
         )}
-    </div>
-  );
+
+        {active2 && (
+          <div className='ingredientes-modoprep'>
+            {receita.modo_preparo && (
+              <div className='modo-preparo'>
+                <h3>Modo de Preparo:</h3>
+                <p>{receita.modo_preparo}</p>
+              </div>)}
+          </div>
+        )}
+
+      {/* fechamento do card de receita */}
+      </div>
+
+      ))) : ( <div>Nenhuma receita encontrada.</div>)
+    }
+  </div>
+);
+
 }
