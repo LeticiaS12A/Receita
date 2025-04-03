@@ -14,37 +14,33 @@
     background-color: rgb(36, 36, 37);
     color: #fff;
     border: 2px solid #fff;
-    box-shadow: 3px 3px 3px 4px #c6c6c6;
 }
 
 .card-receita.expandido1{
-    width: 400px;
+    width: 380px;
     height:480px;
     border-radius: 10px;
     background-color: rgb(36, 36, 37);
     color: #fff;
     border: 2px solid #fff;
-    box-shadow: 3px 3px 3px 4px #c6c6c6;
 }
 
 .card-receita.expandido2{
-    width: 400px;
+    width: 380px;
     height:565px;
     border-radius: 10px;
     background-color: rgb(36, 36, 37);
     color: #fff;
     border: 2px solid #fff;
-    box-shadow: 3px 3px 3px 4px #c6c6c6;
 }
 
 .card-receita.expandidoConjunto{
-    width: 400px;
+    width: 380px;
     height: 785px;
     border-radius: 10px;
     background-color: rgb(36, 36, 37);
     color: #fff;
     border: 2px solid #fff;
-    box-shadow: 3px 3px 3px 4px #c6c6c6;
 }
 
 .info-receitas{
