@@ -50,16 +50,15 @@ Criar uma aplicação Web com **React.js** e **Axios** que consuma uma **API pú
 
 ---
 
-### ✅ Entregáveis
+### 🌕 O que contém neste projeto?
 
-- [x] Código-fonte no GitHub  
-- [x] Arquivo Markdown explicativo  
-- [x] Tutorial em Word com o passo a passo do projeto  
-- [x] Link da API usada  
+- Organização do projeto e criação de pastas 
+- Implantando da API com Axios   
+- Função Card  
+- Funções de aviso para usuários
+- Botões para ocultar e mostrar textos
 
-📆 Entrega até: **08/04 - 12h**  
-📍 Local: **Teams > PWFE > Arquivos > Entregas PWFE**  
-📌 Entrega **individual**
+📆 Entrega até: **08/04 - 12h**
 
 ---
 
