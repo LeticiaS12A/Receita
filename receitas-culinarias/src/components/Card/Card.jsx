@@ -41,12 +41,12 @@ export default function Card() {
 
   //Respondendo carregamento como elemento
   if (loading) {
-  return <div>Carregando receitas...</div>;
+  return <div className='loading-receitas'><p>Carregando receitas...</p></div>;
   }
 
   //Respondendo erro como elemento
   if (error) {
-    return <div>Ocorreu um erro ao carregar as receitas!</div>;
+    return <div className='erro-receitas'><p>!Ocorreu um erro ao carregar as receitas!</p></div>;
   }
 
   //Inicio função de ocultar
@@ -63,7 +63,14 @@ export default function Card() {
 return (
   <div className='card'>
 
-    {receitas.length > 0 ? (
+    {receitas.length > 0 ? loading ? (
+      <div className='loading-receitas'>
+        <p>Carregando Receitas...</p>
+      </div>
+    ) : error? ( 
+      <div className='erro-receitas'>
+        <p>!!!Erro ao carregar Receitas!!!</p>
+      </div> ): (
     receitas.map((receita) => (
       //Card de receita
       <div 

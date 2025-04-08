@@ -1,5 +1,5 @@
 header{
-    width: 100vw;
+    width: 100%;
     height: 50px;
     display: flex;
     justify-content: center;
@@ -7,5 +7,14 @@ header{
     background-color: rgb(36, 36, 37);
     color: white;
     font-size: 25px;
+    font-weight: 600;
+}
+
+.api{
+    font-weight: 800;
+    color:burlywood;
+}
+
+.receitas{
     font-weight: 600;
 }

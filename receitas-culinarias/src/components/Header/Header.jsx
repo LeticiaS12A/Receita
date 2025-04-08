@@ -3,6 +3,6 @@ import './Header.css';
 
 export default function Header(){
     return(
-        <header>Receitas Facil e Rapidas</header>
+        <header><p className="api">API</p><p className="receitas">RECEITAS</p></header>
     );
 }
