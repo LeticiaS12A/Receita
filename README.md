@@ -24,7 +24,6 @@ Criar uma aplicação Web com **React.js** e **Axios** que consuma uma **API pú
 ### 🔗 Links Importantes
 
 - 📁 **Repositório GitHub:** [LeticiaS12A/Receita](https://github.com/LeticiaS12A/Receita.git)
-- 🌐 **API Pública Utilizada:** [https://api-receitas-node.vercel.app/receitas](https://api-receitas-node.vercel.app/receitas)
 
 ---
 
