@@ -42,14 +42,6 @@ Criar uma aplicação Web com **React.js** e **Axios** que consuma uma **API pú
 
 ---
 
-### 📸 Imagem do Projeto
-
-<p align="center">
-  <img src="https://media.tenor.com/OuBz3hNq-dMAAAAC/cooking-anime.gif" width="300" />
-</p>
-
----
-
 ### 🌕 O que contém neste projeto?
 
 - Organização do projeto e criação de pastas 
