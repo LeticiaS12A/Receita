@@ -1,70 +1,85 @@
-# Getting Started with Create React App
+<p align="center" style="margin-bottom: 30px;"> 
+  <img src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/cf2836cb-5893-4a6c-b156-5a89d94fc721/dcar0ad-49bc59a6-3143-4093-af7a-3164ce60ca27.gif?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcL2NmMjgzNmNiLTU4OTMtNGE2Yy1iMTU2LTVhODlkOTRmYzcyMVwvZGNhcjBhZC00OWJjNTlhNi0zMTQzLTQwOTMtYWY3YS0zMTY0Y2U2MGNhMjcuZ2lmIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.9HVm9cQiCCZ2ADVVSRQ0l3NhbDtJZ_WY00ssmG2DjXE" alt="Pixel Art Lua Animada" width="400" />
+</p>
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+---
 
-## Available Scripts
+<h1 align="center" style="color: #1E90FF;">🍽️ Projeto React - Consumo de API</h1>
+<h3 align="center" style="color: #1E90FF;">Trabalho técnico - SENAI Suíço-Brasileiro</h3>
 
-In the project directory, you can run:
+<p align="center">
+  <img src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/cf2836cb-5893-4a6c-b156-5a89d94fc721/dcar0ad-49bc59a6-3143-4093-af7a-3164ce60ca27.gif" width="300"/>
 
-### `npm start`
+  <img align="center" src="https://komarev.com/ghpvc/?username=LeticiaS12A&label=Visualizações&color=blue&style=flat" alt="LeticiaS12A" />
+</p>
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+---
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+### 🎯 Objetivo da Sprint
 
-### `npm test`
+Criar uma aplicação Web com **React.js** e **Axios** que consuma uma **API pública**, exibindo pelo menos **4 propriedades** (sendo uma **imagem obrigatória**), com o projeto devidamente comentado, estilizado, organizado em pastas e componentizado.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+---
 
-### `npm run build`
+### 🔗 Links Importantes
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- 📁 **Repositório GitHub:** [LeticiaS12A/Receita](https://github.com/LeticiaS12A/Receita.git)
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+---
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### 📂 Estrutura do Projeto
 
-### `npm run eject`
+```
+📦src
+ ┣ 📂components
+ ┃ ┣ 📂Header
+ ┃ ┣ 📂Card
+ ┣ 📂service
+ ┣ 📂assets
+ ┣ 📄 App.jsx
+ ┗ 📄 index.js
+```
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+---
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+### 📸 Imagem do Projeto
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+<p align="center">
+  <img src="https://media.tenor.com/OuBz3hNq-dMAAAAC/cooking-anime.gif" width="300" />
+</p>
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+---
 
-## Learn More
+### ✅ Entregáveis
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+- [x] Código-fonte no GitHub  
+- [x] Arquivo Markdown explicativo  
+- [x] Tutorial em Word com o passo a passo do projeto  
+- [x] Link da API usada  
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+📆 Entrega até: **08/04 - 12h**  
+📍 Local: **Teams > PWFE > Arquivos > Entregas PWFE**  
+📌 Entrega **individual**
 
-### Code Splitting
+---
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+### 💻 Tecnologias Utilizadas
 
-### Analyzing the Bundle Size
+<p align="center">
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" width="40" height="40"/>
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" width="40" height="40"/>
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" width="40" height="40"/>
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" width="40" height="40"/>
+</p>
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+---
 
-### Making a Progressive Web App
+### 👩‍💻 Desenvolvido por
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+<p align="center">
+  <strong>Leticia Dos Santos Alves</strong> — Técnica em Desenvolvimento de Sistemas  
+  <br>
+  <a href="https://github.com/LeticiaS12A" target="_blank">GitHub</a> | 
+  <a href="https://twitter.com/lua31a" target="_blank">Twitter</a> | 
+  <a href="https://instagram.com/lua_azul31" target="_blank">Instagram</a>
+</p>
