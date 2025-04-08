@@ -10,7 +10,7 @@
 <p align="center">
   <img src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/cf2836cb-5893-4a6c-b156-5a89d94fc721/dcar0ad-49bc59a6-3143-4093-af7a-3164ce60ca27.gif" width="300"/>
 
-  <img src="https://komarev.com/ghpvc/?username=LeticiaS12A&label=Visualizações&color=blue&style=flat" alt="LeticiaS12A" />
+  <img align="center" src="https://komarev.com/ghpvc/?username=LeticiaS12A&label=Visualizações&color=blue&style=flat" alt="LeticiaS12A" />
 </p>
 
 ---
