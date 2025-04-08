@@ -58,8 +58,6 @@ Criar uma aplicação Web com **React.js** e **Axios** que consuma uma **API pú
 - Funções de aviso para usuários
 - Botões para ocultar e mostrar textos
 
-📆 Entrega até: **08/04 - 12h**
-
 ---
 
 ### 💻 Tecnologias Utilizadas
@@ -76,7 +74,7 @@ Criar uma aplicação Web com **React.js** e **Axios** que consuma uma **API pú
 ### 👩‍💻 Desenvolvido por
 
 <p align="center">
-  <strong>Leticia Dos Santos Alves</strong> — Técnica em Desenvolvimento de Sistemas  
+  <strong>Leticia Dos Santos Alves</strong> 
   <br>
   <a href="https://github.com/LeticiaS12A" target="_blank">GitHub</a> | 
   <a href="https://twitter.com/lua31a" target="_blank">Twitter</a> | 
